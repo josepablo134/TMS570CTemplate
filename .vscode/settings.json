@@ -3,6 +3,7 @@
     "files.associations": {
         "*.arxml": "xml",
         "device_header.h": "c",
-        "sys_common.h": "c"
+        "sys_common.h": "c",
+        "gio.h": "c"
     }
 }

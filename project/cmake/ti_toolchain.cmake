@@ -43,14 +43,14 @@ set(CMAKE_CXX_LINK_EXECUTABLE
 #---------------------------------------------------------------------------------------
 
 # Object build options
-set(OBJECT_GEN_FLAGS "--abi=eabi -mv7R4 --code_state=32 --float_support=VFPv3D16 -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi")
+set(OBJECT_GEN_FLAGS "--abi=eabi -mv7R4 --code_state=32 --float_support=VFPv3D16 -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile")
 
 set(CMAKE_C_FLAGS   "${OBJECT_GEN_FLAGS} " CACHE INTERNAL "C Compiler options")
 set(CMAKE_CXX_FLAGS "${OBJECT_GEN_FLAGS} " CACHE INTERNAL "C++ Compiler options")
 set(CMAKE_ASM_FLAGS "${OBJECT_GEN_FLAGS} " CACHE INTERNAL "ASM Compiler options")
 
 # Checkout Ti arm cgt
-set(CMAKE_EXE_LINKER_FLAGS "--search_path=${TOOLCHAIN_LIB_DIR} --library=rtsv7R4_T_be_v3D16_eabi.lib --entry_point=_c_int00" CACHE INTERNAL "Linker options")
+set(CMAKE_EXE_LINKER_FLAGS "--heap_size=0x800 --stack_size=0x800 --rom_model --be32 --reread_libs --diag_wrap=off --display_error_number --warn_sections --search_path=${TOOLCHAIN_LIB_DIR} --library=rtsv7R4_T_be_v3D16_eabi.lib --entry_point=_c_int00" CACHE INTERNAL "Linker options")
 
 #---------------------------------------------------------------------------------------
 # Set debug/release build configuration Options

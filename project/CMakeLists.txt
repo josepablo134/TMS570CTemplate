@@ -47,7 +47,7 @@ target_include_directories(${EXEC_NAME} PRIVATE
 target_link_options(${EXEC_NAME}
 		PUBLIC
 		# Ti ARM CGT
-		--rom_model -m${OUTPUT_MAP}
+		-m${OUTPUT_MAP} ${LINKER_SCRIPT}
 		# GCC none eabi
 		#-Wl,-T ${LINKER_SCRIPT} -Wl,-Map=${OUTPUT_MAP}
 )

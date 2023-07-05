@@ -27,9 +27,7 @@ This tool has the big endian libs so no workaround is needed with this option.
 
  - __project/cmake__ : Contains the toolchain (compiler, linker and options definition), the linker script and some project specific cmake variables.
 
- - __project/BSP__ : Software component containing the basic software package ([Kendryte Standalone SDK](https://www.canaan.io/developer)).
-
- - __project/BSP__ : Software component containing the basic software package ([Kendryte Standalone SDK](https://www.canaan.io/developer)).
+ - __project/BSPHALCoGen__ : Software component containing the basic software package, this package is generated from HALGCode Tool, here there are multiple examples of projects that can be imported into HALCoGen to reconfigure and generate a new BSP.
 
 # CMake and Ninja
 
