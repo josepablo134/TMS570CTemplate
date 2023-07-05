@@ -2,13 +2,26 @@
 
 A template for projects based on the TMS570 microcontroller (Launchpad XL2, TMS570LS1224).
 
-# Warning
+# Toolchain
+
+## ARM NONE EABI GCC
+
+You can install it from [here](https://developer.arm.com/downloads/-/gnu-rm).
+
+### Warning
 
 TMS570 is a big-endian part (BE32), GCC libraries are compiled only for little-endian systems. Recompile the gcc libs is required.
 
 [TMS570 GCC LIBC Big Endian](https://answers.launchpad.net/gcc-arm-embedded/+question/189066)
 
 [TI TMS570 GCC LIBC Big Endian](https://e2e.ti.com/support/microcontrollers/arm-based-microcontrollers-group/arm-based-microcontrollers/f/arm-based-microcontrollers-forum/907975/ccs-tms570lc4357-halcogen-code-cannot-be-compiled-with-gcc)
+
+
+## TI ARM CGT (Code Generation Tools)
+
+You can install it from [here](https://www.ti.com/tool/download/ARM-CGT).
+
+This tool has the big endian libs so no workaround is needed with this option.
 
 # Project structure
 
