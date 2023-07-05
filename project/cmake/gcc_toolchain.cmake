@@ -5,9 +5,9 @@
 ################################################################################
 
 if (WIN32)
-    include(${CMAKE_CURRENT_LIST_DIR}/win-toolchain.cmake)
+    include(${CMAKE_CURRENT_LIST_DIR}/gcc_win-toolchain.cmake)
 else ()
-    include(${CMAKE_CURRENT_LIST_DIR}/linux-toolchain.cmake)
+    include(${CMAKE_CURRENT_LIST_DIR}/gcc_linux-toolchain.cmake)
 endif ()
 
 # Perform compiler test with static library

@@ -6,7 +6,7 @@
 
 cmake_minimum_required( VERSION 3.18.4 )
 
-include(cmake/toolchain.cmake)
+include(cmake/gcc_toolchain.cmake)
 
 project( TMS570CTemplate
 		DESCRIPTION "Project template for TMS570LS122 microcontroller"

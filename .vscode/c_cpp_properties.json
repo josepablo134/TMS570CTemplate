@@ -4,8 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/project/Harts/include",
-                "D:/opt/kendryte-toolchain/riscv64-unknown-elf/include"
+                "${workspaceFolder}/project/BSP/HALGCode/BSPF021/include"
             ],
             "defines": [
                 "_DEBUG",
