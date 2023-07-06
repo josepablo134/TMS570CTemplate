@@ -16,6 +16,11 @@ TMS570 is a big-endian part (BE32), GCC libraries are compiled only for little-e
 
 [TI TMS570 GCC LIBC Big Endian](https://e2e.ti.com/support/microcontrollers/arm-based-microcontrollers-group/arm-based-microcontrollers/f/arm-based-microcontrollers-forum/907975/ccs-tms570lc4357-halcogen-code-cannot-be-compiled-with-gcc)
 
+[ARM Toolchain](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain)
+
+[ARM Toolchain Source Code](https://sourceware.org/newlib/)
+
+ARM newlib Source Code Git Repo: https://sourceware.org/git/newlib-cygwin.git
 
 ## TI ARM CGT (Code Generation Tools)
 
@@ -27,7 +32,7 @@ This tool has the big endian libs so no workaround is needed with this option.
 
  - __project/cmake__ : Contains the toolchain (compiler, linker and options definition), the linker script and some project specific cmake variables.
 
- - __project/BSPHALCoGen__ : Software component containing the basic software package, this package is generated from HALGCode Tool, here there are multiple examples of projects that can be imported into HALCoGen to reconfigure and generate a new BSP.
+ - __project/BSP/HALCoGen__ : Software component containing the basic software package, this package is generated from HALGCode Tool, here there are multiple examples of projects that can be imported into HALCoGen to reconfigure and generate a new BSP.
 
 # CMake and Ninja
 
